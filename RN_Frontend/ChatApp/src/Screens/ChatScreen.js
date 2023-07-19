@@ -85,7 +85,7 @@ export default function ChatScreen() {
         <View style={{ flex: 1 }}>
             <ChatHeader />
             <View style={styles.ChatScreenContainer}>
-                <ScrollView style={{ maxHeight: heightToDp(84.8) }}>
+                <ScrollView style={{ marginBottom:heightToDp(8) }}>
                     {messages.map((values, i) => {
                         return (
                             <View style={{ backgroundColor: "#09839e", margin: 5, padding: 14, borderRadius: 10, maxWidth: 300, alignSelf: values.sender == "me" ? "flex-end" : "flex-start" }}>
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     inputContainer: {
         justifyContent: "center",
         alignItems: "flex-end",
-        backgroundColor: "#c5c5c5",
+        backgroundColor: "#c5c5c555",
         position: "absolute",
         bottom: 0
     },
